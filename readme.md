@@ -1,6 +1,14 @@
 # Projeto Teste Profite
 
-### Estou utilizando esse projeto de teste da empresa Profite para estudo e praticar HTML, CSS, Javascript, GIT e responsividade.
+Projeto da empresa Profite destinado a Desenvolvedores Front-end - Pleno/Sênior utilizando:
+* HTML e HTML5
+* CSS
+* Javascript e Jquery
+* GIT
+* Responsividade
+
+[Figma Layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
+
 
 
 
