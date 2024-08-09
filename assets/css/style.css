@@ -140,6 +140,7 @@ section {
   font-weight: 700;
   font-size: 20px;
   color: #011627;
+  margin: 0px;
 }
 
 .h-line {
@@ -152,7 +153,6 @@ section {
 .produtos {
   display: flex;
   gap: 100px;
-
 }
 
 .produto-1,
@@ -161,7 +161,7 @@ section {
 .produto-4 {
   display: flex;
   flex-direction: column;
-  max-width: 216px;
+  width: 230px;
   text-align: center;
   padding: 10px;
 }
@@ -177,12 +177,7 @@ section {
   width: 180px;
 }
 
-.rating {
-  background-color: red;
-}
-
 .rating img {
-  background-color: black;
   width: 20px;
 }
 
@@ -193,13 +188,96 @@ section {
   font-size: 14px;
   line-height: 13px;
   margin-bottom: 8px;
+  color: #7A7A7A;
 }
 
 .produto-valor-antigo p {
-  background-color: #FF9F1C;
+
   font-family: 'Ubuntu';
   font-weight: 400;
   color: #7A7A7A;
   text-decoration: line-through;
+  margin: 5px;
+}
 
+.produto-valor-novo p {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  color: #2EC4B6;
+  margin: 0px;
+  font-size: 25px;
+}
+
+.produto-prazo-pagamento p {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  color: #7A7A7A;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.produto-comprar {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.produto-comprar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 50px;
+  gap: 10px;
+  background-color: #2EC4B6;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Ubuntu';
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.produto-comprar a {
+  text-decoration: none;
+}
+
+.produto-comprar img {
+  width: 30px;
+}
+
+footer {
+  background-color: #011627;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-1 h2 {
+  background-color: cyan;
+  margin-bottom: 5px;
+
+}
+
+.informacoes {
+  display: flex;
+  justify-content: center;
+}
+
+.localizacao {
+  display: flex;
+  background-color: orange;
+  gap: 60px;
+}
+
+.footer-2 {
+  height: 10px;
+  width: 100%;
+  background-color: #2EC4B6;
 }
