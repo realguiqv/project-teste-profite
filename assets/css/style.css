@@ -250,34 +250,65 @@ footer {
   background-color: #011627;
   display: flex;
   flex-direction: column;
-
-}
-
-.footer-1 {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.footer-1 h2 {
-  background-color: cyan;
-  margin-bottom: 5px;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  width: 1172px;
+}
 
+.footer-container h2 {
+  margin: 30px 0px 15px 0px;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 
 .informacoes {
+  background-color: purple;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .localizacao {
   display: flex;
-  background-color: orange;
-  gap: 60px;
+  gap: 30px;
 }
 
-.footer-2 {
-  height: 10px;
-  width: 100%;
-  background-color: #2EC4B6;
+.sp h1,
+.rj h1 {
+  margin: 0px;
+  font-family: 'Ubuntu';
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.sp p,
+.rj p {
+  font-family: 'Ubuntu';
+  font-size: 1em;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 25px;
+  margin: 5px 0px 0px 0px;
+}
+
+.contato {
+  background-color: #6bf1eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: #ff7171;
 }
