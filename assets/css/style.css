@@ -34,7 +34,7 @@ header {
   background-position: right;
   font-size: 13px;
   color: #7A7A7A;
-
+  outline: none;
 }
 
 .acessibilidade {
@@ -110,12 +110,11 @@ article {
   margin: 0px 0px 10px 0px;
 }
 
-/* Aqui ficou a dúvida referente ao comportamento da pagina (width - % ou px) */
+
 .banner-right {
   width: 100%;
   background: no-repeat url('/assets/images/banner-right.svg');
   background-size: cover;
-
 }
 
 .background-layer {
@@ -164,6 +163,28 @@ section {
   width: 230px;
   text-align: center;
   padding: 10px;
+  position: relative;
+}
+
+.produto-2::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  transform: translateX(-100%);
+  padding: 39px 40px;
+  background-color: #FF9F1C;
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+#flag {
+  position: absolute;
+  margin: 3px 0px 0px 197px;
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 1.1em;
+
 }
 
 .produto-1:hover,
@@ -181,7 +202,6 @@ section {
   width: 20px;
 }
 
-
 .produto-titulo p {
   font-family: 'Ubuntu';
   font-weight: 500;
@@ -192,7 +212,6 @@ section {
 }
 
 .produto-valor-antigo p {
-
   font-family: 'Ubuntu';
   font-weight: 400;
   color: #7A7A7A;
@@ -220,6 +239,7 @@ section {
   display: flex;
   justify-content: center;
   margin: 10px;
+  position: relative;
 }
 
 .produto-comprar button {
@@ -236,6 +256,7 @@ section {
   font-size: 1.3em;
   font-weight: 500;
   color: #FFFFFF;
+  opacity: 0;
 }
 
 .produto-comprar a {
@@ -244,6 +265,13 @@ section {
 
 .produto-comprar img {
   width: 30px;
+}
+
+.produto-1:hover .produto-comprar button,
+.produto-2:hover .produto-comprar button,
+.produto-3:hover .produto-comprar button,
+.produto-4:hover .produto-comprar button {
+  opacity: 1;
 }
 
 footer {
@@ -257,7 +285,7 @@ footer {
 .footer-container {
   display: flex;
   flex-direction: column;
-  width: 1172px;
+  width: 1300px;
 }
 
 .footer-container h2 {
@@ -269,14 +297,13 @@ footer {
 }
 
 .informacoes {
-  background-color: purple;
   display: flex;
-  justify-content: space-between;
 }
 
 .localizacao {
   display: flex;
   gap: 30px;
+  margin-right: 160px;
 }
 
 .sp h1,
@@ -299,23 +326,21 @@ footer {
 }
 
 .contato {
-  background-color: #6bf1eb;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .contato button {
   background-color: #FF9F1C;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   border: none;
   border-radius: 5px;
   width: 250px;
   height: 50px;
   align-items: center;
   justify-content: center;
-
 }
 
 .contato img {
@@ -329,15 +354,18 @@ footer {
   line-height: 13.58px;
   text-align: left;
   color: #FFFFFF;
-
 }
 
 .footer-logos {
   display: flex;
   flex-direction: column;
+  margin-left: 325px;
+  width: 200px;
   justify-content: end;
-  background-color: #ff7171;
 }
+
+
+
 
 
 
