@@ -85,7 +85,8 @@ header {
   height: 40px;
 }
 
-.language {
+.language,
+.language a {
   display: flex;
   gap: 25px;
   align-items: center;
