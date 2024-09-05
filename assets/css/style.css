@@ -360,6 +360,10 @@ footer {
   color: #FFFFFF;
 }
 
+.entrar-contato a {
+  text-decoration: none;
+}
+
 .footer-logos {
   display: flex;
   flex-direction: column;
